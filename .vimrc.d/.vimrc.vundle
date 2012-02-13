@@ -16,7 +16,6 @@ Bundle 'fholgado/minibufexpl.vim'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/unite.vim'
 " vim-scripts repos
-Bundle 'rstpreview-vim'
 Bundle 'Source-Explorer-srcexpl.vim'
 Bundle 'trinity.vim'
 Bundle 'The-NERD-tree'
