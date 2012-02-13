@@ -1,7 +1,7 @@
 # for virtualenvwrapper
 if [ -f `brew --prefix`/bin/virtualenvwrapper.sh ]; then
    export WORKON_HOME=$HOME/.virtualenvs
-   export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+   export VIRTUALENVWRAPPER_PYTHON=`brew --prefix`/bin/python
    source `brew --prefix`/bin/virtualenvwrapper.sh
 fi
 
