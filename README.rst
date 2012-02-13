@@ -2,8 +2,6 @@
 My Dot Files
 ==============================
 
-.. contents::
-
 Initial Setting
 ------------------
 
