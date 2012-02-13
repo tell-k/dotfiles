@@ -24,5 +24,3 @@ esac
 
 # local settings
 [ -f ~/.dotfiles_local/.bashrc ] && source ~/.dotfiles_local/.bashrc
-
-export LIBLAR_SETTINGS='settings_mine'
