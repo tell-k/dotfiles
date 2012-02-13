@@ -1,5 +1,7 @@
 #!/bin/sh
 
+. $(cd $(dirname $0) && pwd)/env.sh
+
 rm -fr ~/.vimrc
 rm -fr ~/.vimrc.d
 rm -fr ~/.vim

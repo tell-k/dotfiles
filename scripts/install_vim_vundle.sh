@@ -1,3 +1,5 @@
+#!/bin/sh
+
 . $(cd $(dirname $0) && pwd)/env.sh
 
 if [ ! -d $SCRIPT_PATH/../.vim/bundle/vundle ]; then 

@@ -1,19 +1,19 @@
 #!/bin/sh
 
-CURRENT_PATH=$(cd $(dirname $0) && pwd)
+. $(cd $(dirname $0) && pwd)/env.sh
 
-ln -fs $CURRENT_PATH/../.vim/  ~/.vim
-ln -fs $CURRENT_PATH/../.vimrc ~/.vimrc
-ln -fs $CURRENT_PATH/../.vimrc.d/ ~/.vimrc.d
-ln -fs $CURRENT_PATH/../.screenrc ~/.screenrc
-ln -fs $CURRENT_PATH/../.gitconfig ~/.gitconfig
-ln -fs $CURRENT_PATH/../.hgrc ~/.hgrc
-ln -fs $CURRENT_PATH/../.hgrc.d/ ~/.hgrc.d
-ln -fs $CURRENT_PATH/../.bashrc ~/.bashrc
-ln -fs $CURRENT_PATH/../.bashrc.d/ ~/.bashrc.d
-ln -fs $CURRENT_PATH/../.tmux.conf ~/.tmux.conf
-ln -fs $CURRENT_PATH/../.inputrc ~/.inputrc
-ln -fs $CURRENT_PATH/../.pythonstartup.py ~/.pythonstartup.py
+ln -fs $SCRIPT_PATH/../.vim/  ~/.vim
+ln -fs $SCRIPT_PATH/../.vimrc ~/.vimrc
+ln -fs $SCRIPT_PATH/../.vimrc.d/ ~/.vimrc.d
+ln -fs $SCRIPT_PATH/../.screenrc ~/.screenrc
+ln -fs $SCRIPT_PATH/../.gitconfig ~/.gitconfig
+ln -fs $SCRIPT_PATH/../.hgrc ~/.hgrc
+ln -fs $SCRIPT_PATH/../.hgrc.d/ ~/.hgrc.d
+ln -fs $SCRIPT_PATH/../.bashrc ~/.bashrc
+ln -fs $SCRIPT_PATH/../.bashrc.d/ ~/.bashrc.d
+ln -fs $SCRIPT_PATH/../.tmux.conf ~/.tmux.conf
+ln -fs $SCRIPT_PATH/../.inputrc ~/.inputrc
+ln -fs $SCRIPT_PATH/../.pythonstartup.py ~/.pythonstartup.py
 
 [ ! -d ~/.dotfiles_private/ ] && mkdir ~/.dotfiles_private
 touch ~/.dotfiles_private/.bashrc
