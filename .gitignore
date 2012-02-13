@@ -11,3 +11,5 @@ tags
 *.log
 
 .vim/bundle/
+.vim/dict/perl_func.dict
+.vim/dict/php_func.dict
