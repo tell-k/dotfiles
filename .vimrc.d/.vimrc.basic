@@ -1,0 +1,40 @@
+"General settings--------------------------------------------
+colorscheme zellner
+syntax on
+
+set ignorecase
+set expandtab
+set softtabstop=4
+set shiftwidth=4
+set laststatus=2
+set clipboard=unnamed
+set showmatch
+set hlsearch
+set showcmd
+set tags=tags
+set hid
+set backspace=indent,eol,start
+set ambiwidth=double
+
+set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
+set term=builtin_linux
+set ttytype=builtin_linux
+set nowrap
+set title
+set ruler
+map <S-L> <ESC>:bp<CR>
+map <S-K> <ESC>:bn<CR>
+
+command -range Copy :<line1>, <line2> write! ~/.vimclip
+command -range Cut :<line1>, <line2> write! ~/.vimclip | :<line1>, <line2> delete
+command Past :read ~/.vimclip
+
+" 折り畳み設定
+set fdm=marker
+" Tab文字の表示を「>---」みたいにする。
+set listchars=tab:>-
+" タブ文字を CTRL-I で表示し、行末に $ で表示する。（有効:list/無効:nolist）
+set list
+" カーソルが一番上や下に移動した時のビープ音を消す＆画面フラッシュも消す
+" refs http://www.dna.bio.keio.ac.jp/~yuji/vim/gvimrc.txt
+set vb t_vb=

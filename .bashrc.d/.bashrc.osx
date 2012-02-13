@@ -1,0 +1,28 @@
+# for virtualenvwrapper
+if [ -f `brew --prefix`/bin/virtualenvwrapper.sh ]; then
+   export WORKON_HOME=$HOME/.virtualenvs
+   export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+   source `brew --prefix`/bin/virtualenvwrapper.sh
+fi
+
+#if [ -f `brew --prefix`/pythonbrew/pythons/Python-2.7.1/bin/virtualenvwrapper.sh ]; then
+#   export WORKON_HOME=$HOME/.virtualenvs
+#   export VIRTUALENVWRAPPER_PYTHON=`brew --prefix`/pythonbrew/pythons/Python-2.7.1/bin
+#   source $VIRTUALENVWRAPPER_PYTHON/virtualenvwrapper.sh
+#fi
+
+# for pythonbrew
+if [ -f `brew --prefix`/pythonbrew/etc/bashrc ]; then
+   export PYTHONBREW_ROOT=`brew --prefix`/pythonbrew
+   source `brew --prefix`/pythonbrew/etc/bashrc
+fi
+
+# for bash_compilation
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
+
+# for pyqt
+if [ -d `brew --prefix`/lib/python/PyQT4 ]; then
+   export PYTHONPATH=`brew --prefix`/lib/python:$PYTHONPATH
+fi

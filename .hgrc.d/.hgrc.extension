@@ -1,0 +1,14 @@
+[extensions]
+hgext.graphlog = 
+hgext.mq = 
+hgext.pager =
+hgext.fetch = 
+hgext.color =
+
+[color]
+diff.inserted = blue bold
+
+[pager]
+pager = LESS='FSRX' less
+quiet = True
+ignore = version, help, update

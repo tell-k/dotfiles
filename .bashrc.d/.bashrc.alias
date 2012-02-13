@@ -1,0 +1,9 @@
+
+alias ls='ls $LS_OPTIONS'
+alias ll='ls $LS_OPTIONS -l'
+alias vi='vim'
+alias filecount='ls -laR | grep -c "^-"'
+alias globalip='wget -q -O - ipcheck.ieserver.net'
+alias delpyc='find . -name "*.pyc" | xargs rm -fr '
+alias delorig='find . -name "*.orig" | xargs rm -fr '
+alias delswp='find . -name "*.swp" | xargs rm -fr '

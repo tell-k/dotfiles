@@ -1,0 +1,36 @@
+"Vundle--------------------------------------------
+set nocompatible               " be iMproved
+filetype off                   " required!
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+" My Bundles here:
+" original repos on github
+Bundle 'tell-k/vim-browsereload-mac'
+Bundle 'mattn/mkdpreview-vim'
+Bundle 'mattn/webapi-vim'
+Bundle 'fholgado/minibufexpl.vim'
+" Bundle 'sontek/rope-vim'
+Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/unite.vim'
+" vim-scripts repos
+Bundle 'rstpreview-vim'
+Bundle 'Source-Explorer-srcexpl.vim'
+Bundle 'trinity.vim'
+Bundle 'The-NERD-tree'
+Bundle 'taglist.vim'
+Bundle 'tlib'
+Bundle 'ttoc'
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'php-doc'
+Bundle 'pythoncomplete'
+Bundle 'python_fold'
+Bundle 'Pydiction'
+Bundle 'quickrun'
+Bundle 'YankRing.vim'
+"stay pulgin directory
+"commentout.vim
+filetype plugin indent on     " required!

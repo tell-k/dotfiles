@@ -1,0 +1,14 @@
+#basic settings
+%include ~/.hgrc.d/.hgrc.basic
+
+#extension settings
+%include ~/.hgrc.d/.hgrc.extension
+
+#misc settings
+%include ~/.hgrc.d/.hgrc.misc
+
+#private settings
+%include ~/.dotfiles_private/.hgrc
+
+#local settings
+%include ~/.dotfiles_local/.hgrc

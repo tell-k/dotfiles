@@ -1,0 +1,24 @@
+# .bashrc.misc
+
+# プロンプトの表示設定
+# refs http://d.hatena.ne.jp/sinsoku/20110926/1316968305
+hg_branch() {
+    hg branch 2> /dev/null | awk '{printf "(hg:" $1 ")"}'
+}
+PS1="\\t \u@\h \$(hg_branch)\n\w\$ "
+unset color_prompt force_color_prompt
+
+# for subversion
+export SVN_EDITOR=vim
+
+# for python pit
+export EDITOR=vim
+
+# for rvm settings
+[ -s $HOME/.rvm/scripts/rvm ] && source $HOME/.rvm/scripts/rvm
+
+# for pythonstartup
+export PYTHONSTARTUP=$HOME/.pythonstartup.py
+
+# for virtualenv
+export VIRTUALENV_USE_DISTRIBUTE=1

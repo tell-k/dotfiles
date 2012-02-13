@@ -1,0 +1,2 @@
+[alias]
+stb = !(hg branch; hg st)

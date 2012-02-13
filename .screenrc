@@ -1,0 +1,27 @@
+defscrollback 10000
+vbell off
+shell bash
+autodetach on
+startup_message off
+defbce on
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.WK}.: %-w%{.KW}%n %t%{-}%+w :."
+bind ^p paste
+bind w windowlist -b
+
+#default tab list
+screen -t WORK1 1
+screen -t WORK2 2
+screen -t WORK3 3
+screen -t WORK4 4
+screen -t WORK5 5
+screen -t WORK6 6
+screen -t WORK7 7
+
+#private settings
+source $HOME/.dotfiles_private/.screenrc
+
+#local only settings
+source $HOME/.dotfiles_local/.screenrc
+# __EOF__

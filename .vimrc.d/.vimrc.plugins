@@ -1,0 +1,50 @@
+
+" for FuzzyFinder 
+nnoremap <unique> <silent> <space>fb :fufbuffer!<cr>
+nnoremap <unique> <silent> <space>ff :fuffile!<cr>
+nnoremap <unique> <silent> <space>fm :fufmrufile!<cr>
+nnoremap <unique> <silent> <space>fc :fufrenewcache<cr>
+autocmd filetype fuf nmap <c-c> <esc>
+let g:fuf_patternseparator = ' '
+let g:fuf_mrufile_exclude = '\v\.ds_store|\.git|\.swp|\.svn'
+let g:fuf_mrufile_maxitem = 100
+let g:fuf_enumeratinglimit = 20
+let g:fuf_file_exclude = '\v\.ds_store|\.git|\.swp|\.svn'
+let g:fuf_modesDisable = ['mrucmd']
+
+" for browsereload-mac
+command! -bar Cr silent ChromeReload
+command! -bar Fr silent FirefoxReload
+command! -bar Sr silent SafariReload
+command! -bar Or silent OperaReload
+command! -bar Ar silent AllBrowserReload
+
+command! -bar CrStart silent ChromeReloadStart
+command! -bar FrStart silent FirefoxReloadStart
+command! -bar SrStart silent SafariReloadStart
+command! -bar OrStart silent OperaReloadStart
+command! -bar ArStart silent AllBrowserReloadStart
+
+command! -bar CrStop silent ChromeReloadStop
+command! -bar FrStop silent FirefoxReloadStop
+command! -bar SrStop silent SafariReloadStop
+command! -bar OrStop silent OperaReloadStop
+command! -bar ArStop silent AllBrowserReloadStop
+
+" for neocomplcache
+let g:neocomplcache_enable_at_startup = 1 " 起動時に有効化
+
+" for unite.vim
+let g:unite_enable_start_insert=1
+nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
+nnoremap <silent> ,uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
+nnoremap <silent> ,ur :<C-u>Unite -buffer-name=register register<CR>
+nnoremap <silent> ,um :<C-u>Unite file_mru<CR>
+nnoremap <silent> ,uu :<C-u>Unite buffer file_mru<CR>
+nnoremap <silent> ,ua :<C-u>UniteWithBufferDir -buffer-name=files buffer file_mru bookmark file<CR>
+au FileType unite nnoremap <silent> <buffer> <expr> <C-j> unite#do_action('split')
+au FileType unite inoremap <silent> <buffer> <expr> <C-j> unite#do_action('split')
+au FileType unite nnoremap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')
+au FileType unite inoremap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')
+au FileType unite nnoremap <silent> <buffer> <ESC><ESC> q
+au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>q

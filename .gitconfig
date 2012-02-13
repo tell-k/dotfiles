@@ -1,0 +1,21 @@
+[user]
+  name = tell-k
+  email = ffk2005@gmail.com
+
+[color]
+  ui = auto
+  status = auto
+  diff = auto
+  branch = auto
+  interactive = auto
+
+[alias]
+  co = checkout
+  ci = commit -a
+  st = status
+  up = pull --rebase
+  re = push origin master
+  cl = !sh ~/.dotfiles_private/git_clone.sh
+
+[diff]
+  external = colordiff
