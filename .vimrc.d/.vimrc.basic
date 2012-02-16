@@ -1,6 +1,4 @@
 "General settings--------------------------------------------
-colorscheme zellner
-syntax on
 
 set ignorecase
 set expandtab
@@ -38,3 +36,6 @@ set list
 " カーソルが一番上や下に移動した時のビープ音を消す＆画面フラッシュも消す
 " refs http://www.dna.bio.keio.ac.jp/~yuji/vim/gvimrc.txt
 set vb t_vb=
+
+colorscheme zellner
+syntax on
