@@ -21,4 +21,5 @@
   external = colordiff
 
 [core]
-  pager = less -R
+  pager = cat
+  editor = vim
