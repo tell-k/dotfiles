@@ -19,3 +19,6 @@
 
 [diff]
   external = colordiff
+
+[core]
+  pager = less -R
