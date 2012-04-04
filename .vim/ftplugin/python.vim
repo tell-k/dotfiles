@@ -31,8 +31,8 @@ autocmd BufWritePre * :%s/\s\+$//ge
 autocmd BufWritePre * :%s/\t/ /ge
 
 "" pydiction
-set omnifunc=pythoncomplete
-let g:pydiction_location = '~/.vim/dict/complete-dict'
+"set omnifunc=pythoncomplete
+"let g:pydiction_location = '~/.vim/dict/complete-dict'
 
 " python_fold
 set foldmethod=expr
