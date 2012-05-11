@@ -16,10 +16,11 @@
   up = pull --rebase
   re = push origin master
   cl = !sh ~/.dotfiles_private/git_clone.sh
+  glog = log --graph --decorate --oneline
 
-[diff]
-  external = colordiff
+#[diff]
+  #external = colordiff
 
 [core]
-  pager = cat
-  editor = vim
+  pager = less
+  editor = /usr/local/bin/vim

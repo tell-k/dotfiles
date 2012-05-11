@@ -35,7 +35,7 @@ autocmd BufWritePre * :%s/\t/ /ge
 "let g:pydiction_location = '~/.vim/dict/complete-dict'
 
 " python_fold
-set foldmethod=expr
-set foldexpr=GetPythonFold(v:lnum)
-set foldtext=PythonFoldText()
+" set foldmethod=expr
+" set foldexpr=GetPythonFold(v:lnum)
+" set foldtext=PythonFoldText()
 
