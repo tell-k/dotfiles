@@ -15,7 +15,7 @@ Bundle 'fholgado/minibufexpl.vim'
 " Bundle 'sontek/rope-vim'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/unite.vim'
-Bundle 'Lokaltog/vim-powerline'
+" Bundle 'Lokaltog/vim-powerline'
 " vim-scripts repos
 Bundle 'Source-Explorer-srcexpl.vim'
 Bundle 'trinity.vim'
