@@ -32,11 +32,11 @@ command! -bar OrStop silent OperaReloadStop
 command! -bar ArStop silent AllBrowserReloadStop
 
 " for neocomplcache ---------------------------------------------------------
-let g:neocomplcache_enable_at_startup = 1 " 起動時に有効化
+"let g:neocomplcache_enable_at_startup = 1 " 起動時に有効化
 
 " 補完時にマニュアルが表示されないようにする。
 " refs: http://lingr.com/room/vim/archives/2012/02/12#message-7769144
-set completeopt-=preview
+"set completeopt-=preview
 
 " for unite.vim ---------------------------------------------------------
 let g:unite_enable_start_insert=1
