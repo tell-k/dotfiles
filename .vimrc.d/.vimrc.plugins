@@ -32,7 +32,7 @@ command! -bar OrStop silent OperaReloadStop
 command! -bar ArStop silent AllBrowserReloadStop
 
 " for neocomplcache ---------------------------------------------------------
-"lt g:neocomplcache_enable_at_startup = 1 " 起動時に有効化
+"let g:neocomplcache_enable_at_startup = 1 " 起動時に有効化
 
 " 補完時にマニュアルが表示されないようにする。
 " refs: http://lingr.com/room/vim/archives/2012/02/12#message-7769144
@@ -55,3 +55,6 @@ command! -bar ArStop silent AllBrowserReloadStop
 
 " for vim-powerline
 "let g:Powerline_symbols = 'fancy'
+
+" for vim-flake8
+let g:flake8_ignore='E501'

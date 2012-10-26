@@ -6,18 +6,24 @@ call vundle#rc()
 " let Vundle manage Vundle
 " required!
 Bundle 'gmarik/vundle'
+Bundle 'tell-k/vim-browsereload-mac'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'davidhalter/jedi-vim'
+Bundle 'nvie/vim-flake8'
+Bundle 'Source-Explorer-srcexpl.vim'
+Bundle 'python_fold'
+Bundle 'php-doc'
+Bundle 'quickrun'
+Bundle 'YankRing.vim'
 " My Bundles here:
 " original repos on github
-Bundle 'tell-k/vim-browsereload-mac'
 " Bundle 'mattn/mkdpreview-vim'
 " Bundle 'mattn/webapi-vim'
-Bundle 'fholgado/minibufexpl.vim'
 " Bundle 'sontek/rope-vim'
 " Bundle 'Shougo/neocomplcache'
 " Bundle 'Shougo/unite.vim'
-Bundle 'davidhalter/jedi-vim'
+" Bundle 'Lokaltog/vim-powerline'
 " vim-scripts repos
-Bundle 'Source-Explorer-srcexpl.vim'
 " Bundle 'trinity.vim'
 " Bundle 'The-NERD-tree'
 " Bundle 'taglist.vim'
@@ -28,10 +34,6 @@ Bundle 'Source-Explorer-srcexpl.vim'
 " Bundle 'pythoncomplete'
 " Bundle 'Pydiction'
 " Bundle 'sudo.vim'
-Bundle 'python_fold'
-Bundle 'php-doc'
-Bundle 'quickrun'
-Bundle 'YankRing.vim'
 "stay pulgin directory
 " commentout.vim
 filetype plugin indent on     " required!
