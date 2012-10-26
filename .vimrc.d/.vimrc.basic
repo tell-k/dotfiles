@@ -27,20 +27,12 @@ command -range Copy :<line1>, <line2> write! ~/.vimclip
 command -range Cut :<line1>, <line2> write! ~/.vimclip | :<line1>, <line2> delete
 command Past :read ~/.vimclip
 
-" 折り畳み設定
 set fdm=marker
-" Tab文字の表示を「>---」みたいにする。
 set listchars=tab:>-
-" タブ文字を CTRL-I で表示し、行末に $ で表示する。（有効:list/無効:nolist）
 set list
-" カーソルが一番上や下に移動した時のビープ音を消す＆画面フラッシュも消す
 " refs http://www.dna.bio.keio.ac.jp/~yuji/vim/gvimrc.txt
 set vb t_vb=
 
 colorscheme zellner
 syntax on
-
-" pydiction
-set omnifunc=pythoncomplete
-let g:pydiction_location = '~/.vim/dict/complete-dict'
 
