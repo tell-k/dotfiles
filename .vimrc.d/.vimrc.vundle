@@ -8,13 +8,16 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'tell-k/vim-browsereload-mac'
 Bundle 'fholgado/minibufexpl.vim'
-Bundle 'davidhalter/jedi-vim'
 Bundle 'nvie/vim-flake8'
 Bundle 'Source-Explorer-srcexpl.vim'
 Bundle 'python_fold'
 Bundle 'php-doc'
 Bundle 'quickrun'
 Bundle 'YankRing.vim'
+Bundle 'VOoM'
+Bundle 'VST'
+Bundle 'rest.vim'
+" Bundle 'davidhalter/jedi-vim'
 " My Bundles here:
 " original repos on github
 " Bundle 'mattn/mkdpreview-vim'
