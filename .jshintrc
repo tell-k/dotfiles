@@ -1,0 +1,14 @@
+{
+  "strict" : true, 
+  "unused" : true,
+  "undef" : true,
+  "browser" : true,
+  "devel" : true, 
+  "globals": {
+    "_": false,
+    "Backbone": false,
+    "require": false,
+    "requirejs": false,
+    "define": false
+  }
+}

@@ -37,3 +37,4 @@ colorscheme zellner
 syntax on
 
 au BufRead,BufNewFile *.txt     setfiletype text
+au BufNewFile,BufRead *.less    setfiletype less

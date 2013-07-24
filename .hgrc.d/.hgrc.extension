@@ -4,6 +4,7 @@ hgext.mq =
 hgext.pager =
 hgext.fetch = 
 hgext.color =
+hgext.keyword =
 
 [color]
 diff.inserted = blue bold
@@ -12,3 +13,12 @@ diff.inserted = blue bold
 pager = LESS='FSRX' less
 quiet = True
 ignore = version, help, update
+
+[keyword]
+**.rst =
+**.py =
+
+[keywordmaps]
+Date = {date|utcdate}
+Author = {author}
+LastLog = {desc}

@@ -7,6 +7,7 @@ call vundle#rc()
 " required!
 Bundle 'gmarik/vundle'
 Bundle 'tell-k/vim-browsereload-mac'
+Bundle 'Shougo/vimproc.vim'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'nvie/vim-flake8'
 Bundle 'Source-Explorer-srcexpl.vim'
@@ -17,6 +18,11 @@ Bundle 'YankRing.vim'
 Bundle 'VOoM'
 Bundle 'VST'
 Bundle 'rest.vim'
+Bundle 'groenewege/vim-less'
+Bundle 'skammer/vim-css-color'
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'walm/jshint.vim'
+
 " Bundle 'davidhalter/jedi-vim'
 " My Bundles here:
 " original repos on github
