@@ -1,0 +1,61 @@
+if has('vim_starting')
+  set nocompatible               " Be iMproved
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+call neobundle#rc(expand('~/.vim/bundle/'))
+
+" Let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+NeoBundle 'Shougo/vimproc.vim'
+NeoBundle 'fholgado/minibufexpl.vim'
+NeoBundle 'nvie/vim-flake8'
+NeoBundle 'Source-Explorer-srcexpl.vim'
+NeoBundle 'python_fold'
+NeoBundle 'php-doc'
+NeoBundle 'quickrun'
+NeoBundle 'YankRing.vim'
+NeoBundle 'VOoM'
+NeoBundle 'VST'
+NeoBundle 'rest.vim'
+NeoBundle 'L9'
+NeoBundle 'FuzzyFinder'
+NeoBundle 'groenewege/vim-less'
+NeoBundle 'skammer/vim-css-color'
+NeoBundle 'hail2u/vim-css3-syntax'
+NeoBundle 'walm/jshint.vim'
+NeoBundle 'tell-k/vim-browsereload-mac'
+NeoBundle 'tell-k/vim-autopep8'
+NeoBundle 'sontek/rope-vim'
+
+" original repos on github
+" NeoBundle 'mattn/mkdpreview-vim'
+" NeoBundle 'mattn/webapi-vim'
+" NeoBundle 'sontek/rope-vim'
+" NeoBundle 'Shougo/neocomplcache'
+" NeoBundle 'Shougo/unite.vim'
+" NeoBundle 'Lokaltog/vim-powerline'
+" vim-scripts repos
+" Bundle 'trinity.vim'
+" Bundle 'The-NERD-tree'
+" Bundle 'taglist.vim'
+" Bundle 'tlib'
+" Bundle 'ttoc'
+" Bundle 'L9'
+" Bundle 'FuzzyFinder'
+" Bundle 'pythoncomplete'
+" Bundle 'Pydiction'
+" Bundle 'sudo.vim'
+"stay pulgin directory
+" commentout.vim
+
+filetype plugin indent on     " Required!
+"
+" Brief help
+" :NeoBundleList          - list configured bundles
+" :NeoBundleInstall(!)    - install(update) bundles
+" :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+
+" Installation check.
+NeoBundleCheck

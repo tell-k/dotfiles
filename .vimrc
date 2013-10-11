@@ -2,8 +2,8 @@
 "basic settings
 source $HOME/.vimrc.d/.vimrc.basic
 
-"vundle settings
-source $HOME/.vimrc.d/.vimrc.vundle
+"neobundle settings
+source $HOME/.vimrc.d/.vimrc.neobundle
 
 "plugins settings
 source $HOME/.vimrc.d/.vimrc.plugins

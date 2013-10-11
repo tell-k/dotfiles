@@ -1,5 +1,5 @@
 
-" for FuzzyFinder 
+" for FuzzyFinder
 "nnoremap <unique> <silent> <space>fb :fufbuffer!<cr>
 "nnoremap <unique> <silent> <space>ff :fuffile!<cr>
 "nnoremap <unique> <silent> <space>fm :fufmrufile!<cr>
@@ -56,5 +56,15 @@ command! -bar ArStop silent AllBrowserReloadStop
 " for vim-powerline
 "let g:Powerline_symbols = 'fancy'
 
+" for vim-airline
+"set t_Co=256
+
 " for vim-flake8
-let g:flake8_ignore='E501'
+" let g:flake8_ignore='E501'
+
+" for Flake8-vim
+"let g:PyFlakeCheckers = 'flake8'
+
+" for vim-autopep8
+let g:autopep8_disable_show_diff=1
+let g:autopep8_ignore="E501,E309"

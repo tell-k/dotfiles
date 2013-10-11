@@ -24,12 +24,13 @@ setl autoindent
 setl nosmartindent
 setl cindent
 " setl textwidth=80
-setl colorcolumn=80
+setl colorcolumn=100
 
 "保存時に行末の空白を除去する
 autocmd BufWritePre * :%s/\s\+$//ge
 "保存時にtabをスペースに変換する
 autocmd BufWritePre * :%s/\t/ /ge
+autocmd BufNewFile,BufRead *.py :call Flake8()
 
 let g:jedi#auto_initialization = 1
 let g:jedi#rename_command = "<leader>R"

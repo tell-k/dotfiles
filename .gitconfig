@@ -17,6 +17,8 @@
   re = push origin master
   cl = !sh ~/.dotfiles_private/git_clone.sh
   glog = log --graph --decorate --oneline
+  # http://qiita.com/naoty_k/items/3fcd60e063f26e90321d
+  gg = grep -C 3 -n -H --heading --break
 
 #[diff]
   #external = colordiff
@@ -24,3 +26,6 @@
 [core]
   pager = less
   editor = /usr/local/bin/vim
+
+[grep]
+  lineNumber = true
