@@ -5,6 +5,7 @@ hgext.pager =
 hgext.fetch = 
 hgext.color =
 hgext.keyword =
+grepfile = ~/.dotfiles_private/grepfile.py
 
 [color]
 diff.inserted = blue bold

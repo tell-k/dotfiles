@@ -19,3 +19,5 @@ fi
 
 #umask settings
 umask 002
+
+set ambiwidth=double

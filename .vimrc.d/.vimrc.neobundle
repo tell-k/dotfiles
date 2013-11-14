@@ -23,11 +23,12 @@ NeoBundle 'L9'
 NeoBundle 'FuzzyFinder'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'skammer/vim-css-color'
-NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'walm/jshint.vim'
 NeoBundle 'tell-k/vim-browsereload-mac'
 NeoBundle 'tell-k/vim-autopep8'
 NeoBundle 'sontek/rope-vim'
+NeoBundle 'rking/ag.vim'
+NeoBundle 'davidhalter/jedi-vim'
 
 " original repos on github
 " NeoBundle 'mattn/mkdpreview-vim'

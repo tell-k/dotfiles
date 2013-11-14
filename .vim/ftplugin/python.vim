@@ -30,12 +30,12 @@ setl colorcolumn=100
 autocmd BufWritePre * :%s/\s\+$//ge
 "保存時にtabをスペースに変換する
 autocmd BufWritePre * :%s/\t/ /ge
-autocmd BufNewFile,BufRead *.py :call Flake8()
+"autocmd BufNewFile,BufRead *.py :call Flake8()
 
 let g:jedi#auto_initialization = 1
-let g:jedi#rename_command = "<leader>R"
+"let g:jedi#rename_command = "<leader>R"
 let g:jedi#popup_on_dot = 1
-autocmd FileType python let b:did_ftplugin = 1
+"autocmd FileType python let b:did_ftplugin = 1
 
 " python_fold
 "set foldmethod=expr
