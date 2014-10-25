@@ -24,3 +24,6 @@ esac
 
 # local settings
 [ -f ~/.dotfiles_local/.bashrc ] && source ~/.dotfiles_local/.bashrc
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

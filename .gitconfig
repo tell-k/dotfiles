@@ -19,6 +19,8 @@
   glog = log --graph --decorate --oneline
   # http://qiita.com/naoty_k/items/3fcd60e063f26e90321d
   gg = grep -C 3 -n -H --heading --break
+  # http://qiita.com/geta6/items/63465f38aa064bce1a9c
+  today = "!sh -c 'git log --reverse --no-merges --branches=* --date=local --since=midnight --oneline --author=\"`git config --get user.name`\"'"
 
 #[diff]
   #external = colordiff
@@ -29,3 +31,4 @@
 
 [grep]
   lineNumber = true
+

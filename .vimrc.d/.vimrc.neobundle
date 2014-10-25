@@ -8,35 +8,42 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-NeoBundle 'Shougo/vimproc.vim'
+" NeoBundle 'Shougo/vimproc.vim'
+" NeoBundle 'Source-Explorer-srcexpl.vim'
+" NeoBundle 'python_fold'
+" NeoBundle 'php-doc'
+" NeoBundle 'YankRing.vim'
+" NeoBundle 'VOoM'
+" NeoBundle 'VST'
+" NeoBundle 'rest.vim'
+" NeoBundle 'L9'
+" NeoBundle 'FuzzyFinder'
+" NeoBundle 'groenewege/vim-less'
+" NeoBundle 'thinca/vim-quickrun'
+" NeoBundle 'skammer/vim-css-color'
+" NeoBundle 'walm/jshint.vim'
+" NeoBundle 'tell-k/vim-browsereload-mac'
+" NeoBundle 'mhinz/vim-signify'
+
+NeoBundle 'kana/vim-operator-user'
 NeoBundle 'fholgado/minibufexpl.vim'
 NeoBundle 'nvie/vim-flake8'
-NeoBundle 'Source-Explorer-srcexpl.vim'
-NeoBundle 'python_fold'
-NeoBundle 'php-doc'
-NeoBundle 'YankRing.vim'
-NeoBundle 'VOoM'
-NeoBundle 'VST'
-NeoBundle 'rest.vim'
-NeoBundle 'L9'
-NeoBundle 'FuzzyFinder'
-NeoBundle 'groenewege/vim-less'
-NeoBundle 'thinca/vim-quickrun'
-NeoBundle 'skammer/vim-css-color'
-NeoBundle 'hail2u/vim-css3-syntax'
-NeoBundle 'walm/jshint.vim'
-NeoBundle 'tell-k/vim-browsereload-mac'
+NeoBundle 'tell-k/vim-autoflake'
 NeoBundle 'tell-k/vim-autopep8'
 NeoBundle 'davidhalter/jedi-vim'
+NeoBundle 'rizzatti/dash.vim'
+NeoBundle 'rubik/vim-radon'
 
-" original repos on github
+" original repos on github ------------------------
 " NeoBundle 'mattn/mkdpreview-vim'
-" NeoBundle 'mattn/webapi-vim'
+
 " NeoBundle 'sontek/rope-vim'
+
 " NeoBundle 'Shougo/neocomplcache'
 " NeoBundle 'Shougo/unite.vim'
 " NeoBundle 'Lokaltog/vim-powerline'
-" vim-scripts repos
+
+" vim-scripts repos -------------------------------
 " Bundle 'trinity.vim'
 " Bundle 'The-NERD-tree'
 " Bundle 'taglist.vim'
@@ -47,11 +54,12 @@ NeoBundle 'davidhalter/jedi-vim'
 " Bundle 'pythoncomplete'
 " Bundle 'Pydiction'
 " Bundle 'sudo.vim'
-"stay pulgin directory
+
+" stay pulgin directory ----------------------------
 " commentout.vim
 
 filetype plugin indent on     " Required!
-"
+
 " Brief help
 " :NeoBundleList          - list configured bundles
 " :NeoBundleInstall(!)    - install(update) bundles

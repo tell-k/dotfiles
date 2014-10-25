@@ -2,10 +2,10 @@
 
 set ignorecase
 set expandtab
-set softtabstop=4
-set shiftwidth=4
+"set softtabstop=4
+"set shiftwidth=4
 set laststatus=2
-set clipboard=unnamed
+set clipboard=unnamed,autoselect
 set showmatch
 set hlsearch
 set showcmd

@@ -56,6 +56,11 @@ command! -bar ArStop silent AllBrowserReloadStop
 let g:autopep8_disable_show_diff=1
 let g:autopep8_ignore="E501,E309"
 
+" for vim-autoflake8
+let g:autoflake_remove_all_unused_imports=1
+let g:autoflake_remove_unused_variables=1
+let g:autoflake_disable_show_diff=1
+
 " for minibufexpl.vim
 let g:miniBufExplCheckDupeBufs = 0
 
@@ -63,3 +68,10 @@ let g:miniBufExplCheckDupeBufs = 0
 "let g:ropevim_autoimport_modules = ["os", "shutil"]
 "
 autocmd FileType python setlocal completeopt-=preview
+
+function Autoformat()
+  :call Autoflake()
+  :w
+  :call Autopep8()
+endfunction
+autocmd FileType python map <buffer> <F8> :call Autoformat()<CR>:
