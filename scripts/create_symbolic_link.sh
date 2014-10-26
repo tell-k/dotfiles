@@ -10,6 +10,7 @@ ln -fs $SCRIPT_PATH/../.gitconfig ~/.gitconfig
 ln -fs $SCRIPT_PATH/../.hgrc ~/.hgrc
 ln -fs $SCRIPT_PATH/../.hgrc.d/ ~/.hgrc.d
 ln -fs $SCRIPT_PATH/../.bashrc ~/.bashrc
+ln -fs $SCRIPT_PATH/../.bash_profile ~/.bash_profile
 ln -fs $SCRIPT_PATH/../.bashrc.d/ ~/.bashrc.d
 ln -fs $SCRIPT_PATH/../.tmux.conf ~/.tmux.conf
 ln -fs $SCRIPT_PATH/../.inputrc ~/.inputrc
