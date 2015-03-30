@@ -1,2 +1,3 @@
 [alias]
 stb = !(hg branch; hg st)
+slog = log --template '{rev}:{node|short} {desc|firstline}\n'

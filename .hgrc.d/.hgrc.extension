@@ -9,6 +9,7 @@ grepfile = ~/.dotfiles_private/grepfile.py
 color =
 diff_highlight =
 shelve=
+mercurial_keyring =
 
 [color]
 diff.inserted = blue bold
@@ -26,3 +27,4 @@ ignore = version, help, update
 Date = {date|utcdate}
 Author = {author}
 LastLog = {desc}
+
