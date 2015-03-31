@@ -1,1 +1,1 @@
-vim +BundleInstall +qall
+vim +NeoBundleInstall +qall 

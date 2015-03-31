@@ -34,8 +34,8 @@ Help
  
  $ make help
  Please use `make <target>' where <target> is one of
- setup               to setup initialize.
- install_vim_vundle  to install vundle vim plugin.
+ setup               to setup dotfiles.
+ install_neobundle   to install neobundle.vim.
  install_vim_plugins to install vim plugins by vundle vim.
  create_symlinks     to create symbolic links.
  remove_symlinks     to remove symbolic links.
