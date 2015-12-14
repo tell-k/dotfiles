@@ -33,6 +33,9 @@
   lineNumber = true
 
 [filter "hawser"]
-	clean = git hawser clean %f
-	smudge = git hawser smudge %f
-	required = true
+  clean = git hawser clean %f
+  smudge = git hawser smudge %f
+  required = true
+
+[ghq]
+  root = /Users/tell_k/Work/ghq

@@ -15,6 +15,7 @@ ln -fs $SCRIPT_PATH/../.bashrc.d/ ~/.bashrc.d
 ln -fs $SCRIPT_PATH/../.tmux.conf ~/.tmux.conf
 ln -fs $SCRIPT_PATH/../.inputrc ~/.inputrc
 ln -fs $SCRIPT_PATH/../.pythonstartup.py ~/.pythonstartup.py
+ln -fs $SCRIPT_PATH/switch_vim.sh ~/.switch_vim.sh
 
 [ ! -d ~/.dotfiles_private/ ] && mkdir ~/.dotfiles_private
 touch ~/.dotfiles_private/.bashrc
