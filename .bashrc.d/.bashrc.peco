@@ -1,0 +1,23 @@
+#function peco-lscd {
+#    local dir="$( find . -maxdepth 1 -type d | sed -e 's;\./;;' | peco )"
+#    if [ ! -z "$dir" ] ; then
+#        cd "$dir"
+#    fi
+#}
+#function peco-cd() {
+#  cd "$(git ls-tree -dr --name-only --full-name --full-tree HEAD | sed -e "s|^|`git rev-parse --show-toplevel`/|" | peco)"
+#}
+#function peco-ghq() {
+#    local selected_dir=$(ghq list | peco --query "$LBUFFER")
+#    if [ -n "$selected_dir" ]; then
+#        BUFFER="cd ${GOPATH}/src/${selected_dir}"
+#        zle accept-line
+#    fi
+#    zle redisplay
+#}
+#zle -N peco-src
+#stty -ixon
+#bindkey '^s' peco-src
+
+# alias -g B='`git branch | peco | sed -e "s/^\*[ ]*//g"`'
+# alias B='`hg branch | peco | sed -e "s/^\*[ ]*//g"`'

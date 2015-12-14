@@ -19,11 +19,14 @@ linux*)
     ;;
 esac
 
+# peco settings
+[ -f ~/.bashrc.d/.bashrc.peco ] && source ~/.bashrc.d/.bashrc.peco
+
 # private settings
 [ -f ~/.dotfiles_private/.bashrc ] && source ~/.dotfiles_private/.bashrc
 
 # local settings
 [ -f ~/.dotfiles_local/.bashrc ] && source ~/.dotfiles_local/.bashrc
 
-### Added by the Heroku Toolbelt
+# Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
