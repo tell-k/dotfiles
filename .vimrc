@@ -1,15 +1,15 @@
 
 "basic settings
-source $HOME/.vimrc.d/.vimrc.basic
+source $HOME/.vimrc.d/basic
 
 "neobundle settings
-source $HOME/.vimrc.d/.vimrc.neobundle
+source $HOME/.vimrc.d/neobundle
 
 "plugins settings
-source $HOME/.vimrc.d/.vimrc.plugins
+source $HOME/.vimrc.d/plugins
 
 "misc settings
-source $HOME/.vimrc.d/.vimrc.misc
+source $HOME/.vimrc.d/misc
 
 "private settings
 source $HOME/.dotfiles_private/.vimrc

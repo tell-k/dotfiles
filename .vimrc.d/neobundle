@@ -7,10 +7,6 @@ endif
 " call neobundle#rc(expand('~/.vim/bundle/'))
 
 call neobundle#begin(expand('~/.vim/bundle/'))
-NeoBundleFetch 'Shougo/neobundle.vim'
-call neobundle#end()
-
-
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
@@ -39,13 +35,11 @@ NeoBundle 'tell-k/vim-autopep8'
 NeoBundle 'tell-k/vim-quick-radon'
 NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'rizzatti/dash.vim'
-NeoBundle 'rubik/vim-radon'
+NeoBundle 'leafgarland/typescript-vim'
 
 " original repos on github ------------------------
 " NeoBundle 'mattn/mkdpreview-vim'
-
 " NeoBundle 'sontek/rope-vim'
-
 " NeoBundle 'Shougo/neocomplcache'
 " NeoBundle 'Shougo/unite.vim'
 " NeoBundle 'Lokaltog/vim-powerline'
@@ -72,5 +66,6 @@ filetype plugin indent on     " Required!
 " :NeoBundleInstall(!)    - install(update) bundles
 " :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
 
+call neobundle#end()
 " Installation check.
 NeoBundleCheck

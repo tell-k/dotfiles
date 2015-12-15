@@ -15,3 +15,5 @@ rm -fr ~/.bashrc.d
 rm -fr ~/.tmux.conf
 rm -fr ~/.inputrc
 rm -fr ~/.pythonstartup.py
+rm -fr ~/.switch_vim.sh
+rm -fr ~/.config/peco

@@ -2,20 +2,23 @@
 
 . $(cd $(dirname $0) && pwd)/env.sh
 
-ln -fs $SCRIPT_PATH/../.vim/  ~/.vim
-ln -fs $SCRIPT_PATH/../.vimrc ~/.vimrc
-ln -fs $SCRIPT_PATH/../.vimrc.d/ ~/.vimrc.d
-ln -fs $SCRIPT_PATH/../.screenrc ~/.screenrc
-ln -fs $SCRIPT_PATH/../.gitconfig ~/.gitconfig
-ln -fs $SCRIPT_PATH/../.hgrc ~/.hgrc
-ln -fs $SCRIPT_PATH/../.hgrc.d/ ~/.hgrc.d
-ln -fs $SCRIPT_PATH/../.bashrc ~/.bashrc
-ln -fs $SCRIPT_PATH/../.bash_profile ~/.bash_profile
-ln -fs $SCRIPT_PATH/../.bashrc.d/ ~/.bashrc.d
-ln -fs $SCRIPT_PATH/../.tmux.conf ~/.tmux.conf
-ln -fs $SCRIPT_PATH/../.inputrc ~/.inputrc
-ln -fs $SCRIPT_PATH/../.pythonstartup.py ~/.pythonstartup.py
-ln -fs $SCRIPT_PATH/switch_vim.sh ~/.switch_vim.sh
+ln -fs $SCRIPT_PATH/../.vim/  ~/
+ln -fs $SCRIPT_PATH/../.vimrc ~/
+ln -fs $SCRIPT_PATH/../.vimrc.d/ ~/
+ln -fs $SCRIPT_PATH/../.screenrc ~/
+ln -fs $SCRIPT_PATH/../.gitconfig ~/.
+ln -fs $SCRIPT_PATH/../.hgrc ~/
+ln -fs $SCRIPT_PATH/../.hgrc.d/ ~/
+ln -fs $SCRIPT_PATH/../.bashrc ~/
+ln -fs $SCRIPT_PATH/../.bash_profile ~/
+ln -fs $SCRIPT_PATH/../.bashrc.d/ ~/
+ln -fs $SCRIPT_PATH/../.tmux.conf ~/
+ln -fs $SCRIPT_PATH/../.inputrc ~/
+ln -fs $SCRIPT_PATH/../.pythonstartup.py ~/
+ln -fs $SCRIPT_PATH/switch_vim.sh ~/
+
+mkdir -p ~/.config
+ln -fs $SCRIPT_PATH/../.config/peco ~/.config/
 
 [ ! -d ~/.dotfiles_private/ ] && mkdir ~/.dotfiles_private
 touch ~/.dotfiles_private/.bashrc

@@ -1,11 +1,11 @@
 #basic settings
-%include ~/.hgrc.d/.hgrc.basic
+%include ~/.hgrc.d/basic
 
 #extension settings
-%include ~/.hgrc.d/.hgrc.extension
+%include ~/.hgrc.d/extension
 
 #misc settings
-%include ~/.hgrc.d/.hgrc.misc
+%include ~/.hgrc.d/misc
 
 #private settings
 %include ~/.dotfiles_private/.hgrc

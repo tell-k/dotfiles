@@ -1,32 +1,29 @@
 # .bashrc
 
 # basic settings
-[ -f ~/.bashrc.d/.bashrc.basic ] && source ~/.bashrc.d/.bashrc.basic
+[ -f ~/.bashrc.d/basic ] && source ~/.bashrc.d/basic
 
 # alias settings
-[ -f ~/.bashrc.d/.bashrc.alias ] && source ~/.bashrc.d/.bashrc.alias
+[ -f ~/.bashrc.d/alias ] && source ~/.bashrc.d/alias
 
 # misc settings
-[ -f ~/.bashrc.d/.bashrc.misc ] && source ~/.bashrc.d/.bashrc.misc
+[ -f ~/.bashrc.d/misc ] && source ~/.bashrc.d/misc
 
 # mac or linux settings
 case "${OSTYPE}" in
 darwin*)
-    [ -f ~/.bashrc.d/.bashrc.osx ] && source ~/.bashrc.d/.bashrc.osx
+    [ -f ~/.bashrc.d/osx ] && source ~/.bashrc.d/osx
     ;;
 linux*)
-    [ -f ~/.bashrc.d/.bashrc.linux ] && source ~/.bashrc.d/.bashrc.linux
+    [ -f ~/.bashrc.d/linux ] && source ~/.bashrc.d/linux
     ;;
 esac
 
 # peco settings
-[ -f ~/.bashrc.d/.bashrc.peco ] && source ~/.bashrc.d/.bashrc.peco
+[ -f ~/.bashrc.d/peco ] && source ~/.bashrc.d/peco
 
 # private settings
 [ -f ~/.dotfiles_private/.bashrc ] && source ~/.dotfiles_private/.bashrc
 
 # local settings
 [ -f ~/.dotfiles_local/.bashrc ] && source ~/.dotfiles_local/.bashrc
-
-# Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
