@@ -15,7 +15,7 @@ ln -fs $SCRIPT_PATH/../.bashrc.d/ ~/
 ln -fs $SCRIPT_PATH/../.tmux.conf ~/
 ln -fs $SCRIPT_PATH/../.inputrc ~/
 ln -fs $SCRIPT_PATH/../.pythonstartup.py ~/
-ln -fs $SCRIPT_PATH/switch_vim.sh ~/
+ln -fs $SCRIPT_PATH/switch_vim.sh ~/.switch_vim.sh
 
 mkdir -p ~/.config
 ln -fs $SCRIPT_PATH/../.config/peco ~/.config/

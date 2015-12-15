@@ -1,10 +1,11 @@
 # peco for change directory
 pcd() {
-    local dir="$( ls -1d $HOME/Work/*/*/*/*/ | peco )"
+    local dir="$( ls -1d $HOME/Work/*/*/*/ | peco )"
     if [ ! -z "$dir" ] ; then
         cd "$dir"
     fi
 }
+bind -x '"\C-j":pcd'
 
 # http://qiita.com/omega999/items/8717c1b9d8bc10596d67
 phistory() {
