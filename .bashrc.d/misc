@@ -19,3 +19,10 @@ export PYTHONSTARTUP=$HOME/.pythonstartup.py
 
 # for virtualenv
 export VIRTUALENV_USE_DISTRIBUTE=1
+
+_invoke() {
+  local cur=${COMP_WORDS[COMP_CWORD]}
+  local _list=$(invoke --complete)
+  COMPREPLY=($(compgen -W '${_list}' -- $cur));
+}
+complete -F _invoke -o default -o bashdefault invoke

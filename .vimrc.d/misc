@@ -15,3 +15,7 @@ augroup vimrc-auto-mkdir
         endif
     endfunction
 augroup END
+
+if $GOROOT != ''
+  set rtp+=$GOROOT/misc/vim
+endif

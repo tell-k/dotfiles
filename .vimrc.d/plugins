@@ -1,4 +1,5 @@
 
+
 " for FuzzyFinder
 "nnoremap <unique> <silent> <space>fb :fufbuffer!<cr>
 "nnoremap <unique> <silent> <space>ff :fuffile!<cr>
@@ -54,6 +55,7 @@ command! -bar ArStop silent AllBrowserReloadStop
 
 " for vim-autopep8
 let g:autopep8_disable_show_diff=1
+"let g:autopep8_diff_type="vertical"
 let g:autopep8_ignore="E501,E309"
 
 " for vim-autoflake8
@@ -75,3 +77,6 @@ function Autoformat()
   :call Autopep8()
 endfunction
 autocmd FileType python map <buffer> <F8> :call Autoformat()<CR>:
+
+" for typescript-vim
+autocmd BufRead,BufNewFile *.ts set filetype=typescript

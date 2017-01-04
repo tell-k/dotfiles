@@ -5,7 +5,7 @@ pcd() {
         cd "$dir"
     fi
 }
-bind -x '"\C-j":pcd'
+bind -x '"\C-f":pcd'
 
 # http://qiita.com/omega999/items/8717c1b9d8bc10596d67
 phistory() {

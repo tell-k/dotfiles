@@ -26,4 +26,5 @@ escape ^Zt
 
 #local only settings
 source $HOME/.dotfiles_local/.screenrc
+
 # __EOF__

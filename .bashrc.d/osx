@@ -14,3 +14,5 @@ fi
 if [ -d `brew --prefix`/lib/python/PyQT4 ]; then
    export PYTHONPATH=`brew --prefix`/lib/python:$PYTHONPATH
 fi
+
+vscode () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}

@@ -1,5 +1,6 @@
 [ui]
 username = tellk <tell-k@beproud.jp>
+merge = vimdiff
 
 [web]
 style = monoblue

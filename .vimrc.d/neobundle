@@ -27,15 +27,20 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " NeoBundle 'tell-k/vim-browsereload-mac'
 " NeoBundle 'mhinz/vim-signify'
 
+
 NeoBundle 'kana/vim-operator-user'
 NeoBundle 'fholgado/minibufexpl.vim'
 NeoBundle 'nvie/vim-flake8'
 NeoBundle 'tell-k/vim-autoflake'
 NeoBundle 'tell-k/vim-autopep8'
 NeoBundle 'tell-k/vim-quick-radon'
+NeoBundle 'tell-k/vim-browsereload-mac'
 NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'rizzatti/dash.vim'
 NeoBundle 'leafgarland/typescript-vim'
+NeoBundle 'fatih/vim-go'
+NeoBundle 'hynek/vim-python-pep8-indent'
+NeoBundle 'hashivim/vim-terraform'
 
 " original repos on github ------------------------
 " NeoBundle 'mattn/mkdpreview-vim'
