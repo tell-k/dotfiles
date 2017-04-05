@@ -16,3 +16,8 @@ if [ -d `brew --prefix`/lib/python/PyQT4 ]; then
 fi
 
 vscode () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
+# https://github.com/pyca/cryptography/issues/2692#issuecomment-272773481
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl/include"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"

@@ -55,8 +55,11 @@ command! -bar ArStop silent AllBrowserReloadStop
 
 " for vim-autopep8
 let g:autopep8_disable_show_diff=1
-"let g:autopep8_diff_type="vertical"
+let g:autopep8_aggressive=2
 let g:autopep8_ignore="E501,E309"
+"let g:autopep8_diff_type='vertical'
+" autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
+autocmd FileType python set equalprg=autopep8\ -
 
 " for vim-autoflake8
 let g:autoflake_remove_all_unused_imports=1
@@ -80,3 +83,19 @@ autocmd FileType python map <buffer> <F8> :call Autoformat()<CR>:
 
 " for typescript-vim
 autocmd BufRead,BufNewFile *.ts set filetype=typescript
+
+let g:yankring_clipboard_monitor=0
+
+let g:jedi#popup_select_first = 0
+let g:jedi#popup_on_dot = 0
+
+let g:jedi#popup_select_first = 0
+let g:jedi#popup_on_dot = 0
+
+" vim-go
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+
+autocmd FileType go :highlight goErr cterm=bold ctermfg=214
+autocmd FileType go :match goErr /\<err\>/

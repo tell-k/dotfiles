@@ -6,6 +6,7 @@ set expandtab
 "set shiftwidth=4
 set laststatus=2
 set clipboard=unnamed,autoselect
+set clipboard+=unnamedplus
 set showmatch
 set hlsearch
 set showcmd
@@ -38,3 +39,4 @@ syntax on
 
 au BufRead,BufNewFile *.txt     setfiletype text
 au BufNewFile,BufRead *.less    setfiletype less
+

@@ -2,7 +2,6 @@
 
 # basic settings
 [ -f ~/.bashrc.d/basic ] && source ~/.bashrc.d/basic
-
 # alias settings
 [ -f ~/.bashrc.d/alias ] && source ~/.bashrc.d/alias
 
@@ -27,3 +26,4 @@ esac
 
 # local settings
 [ -f ~/.dotfiles_local/.bashrc ] && source ~/.dotfiles_local/.bashrc
+
