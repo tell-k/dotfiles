@@ -5,11 +5,11 @@ hgext.pager =
 hgext.fetch = 
 hgext.color =
 hgext.keyword =
-grepfile = ~/.dotfiles_private/grepfile.py
+# grepfile = ~/.dotfiles_private/grepfile.py
 color =
-diff_highlight =
+#diff_highlight =
 shelve=
-#mercurial_keyring =
+mercurial_keyring =
 
 [color]
 diff.inserted = blue bold

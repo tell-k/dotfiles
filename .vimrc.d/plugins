@@ -57,9 +57,10 @@ command! -bar ArStop silent AllBrowserReloadStop
 let g:autopep8_disable_show_diff=1
 let g:autopep8_aggressive=2
 let g:autopep8_ignore="E501,E309"
-"let g:autopep8_diff_type='vertical'
+" let g:autopep8_on_save = 1
+" let g:autopep8_diff_type='vertical'
 " autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
-autocmd FileType python set equalprg=autopep8\ -
+" autocmd FileType python set equalprg=autopep8\ -
 
 " for vim-autoflake8
 let g:autoflake_remove_all_unused_imports=1
@@ -86,11 +87,9 @@ autocmd BufRead,BufNewFile *.ts set filetype=typescript
 
 let g:yankring_clipboard_monitor=0
 
+let g:jedi#force_py_version = 3
 let g:jedi#popup_select_first = 0
-let g:jedi#popup_on_dot = 0
-
-let g:jedi#popup_select_first = 0
-let g:jedi#popup_on_dot = 0
+let g:jedi#popup_on_dot = 1
 
 " vim-go
 let g:go_highlight_functions = 1
@@ -99,3 +98,21 @@ let g:go_highlight_structs = 1
 
 autocmd FileType go :highlight goErr cterm=bold ctermfg=214
 autocmd FileType go :match goErr /\<err\>/
+
+" js 拡張子でも有効にする
+let g:jsx_ext_required = 0
+" @jsx React.DOM プラグマがある場合のみ有効にする
+" let g:jsx_pragma_required = 1
+
+autocmd FileType vue syntax sync fromstart
+autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
+
+"Airline
+set laststatus=2
+set showtabline=0 "常にタブラインを非表示
+set t_Co=256 "この設定がないと色が正しく表示されない
+let g:airline_theme='papercolor' 
+let g:airline_powerline_fonts = 1
+"let g:airline#extensions#tabline#enabled = 0
+"let g:airline#extensions#tabline#buffer_idx_mode = 0
+

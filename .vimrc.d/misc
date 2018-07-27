@@ -16,6 +16,14 @@ augroup vimrc-auto-mkdir
     endfunction
 augroup END
 
+" for vim-go
 if $GOROOT != ''
   set rtp+=$GOROOT/misc/vim
 endif
+
+" QuickFix
+" https://twitter.com/h_east/status/639978006987976704 
+function Qreplace()
+  execute "up|cnf"
+  execute "normal 100@='g&@:'"
+endfunction

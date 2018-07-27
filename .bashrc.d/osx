@@ -1,7 +1,7 @@
 # for virtualenvwrapper
 if [ -f `brew --prefix`/bin/virtualenvwrapper.sh ]; then
    export WORKON_HOME=$HOME/.virtualenvs
-   export VIRTUALENVWRAPPER_PYTHON=`brew --prefix`/bin/python
+   export VIRTUALENVWRAPPER_PYTHON=`brew --prefix`/bin/python2
    source `brew --prefix`/bin/virtualenvwrapper.sh
 fi
 
@@ -21,3 +21,7 @@ vscode () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 export LDFLAGS="-L/usr/local/opt/openssl/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl/include"
 export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+
+# for golang
+export GOPATH=$HOME/Work
+export PATH=$PATH:$GOPATH/bin

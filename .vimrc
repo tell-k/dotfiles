@@ -17,3 +17,4 @@ source $HOME/.dotfiles_private/.vimrc
 
 "local settings
 source $HOME/.dotfiles_local/.vimrc
+

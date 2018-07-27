@@ -38,4 +38,4 @@
   required = true
 
 [ghq]
-  root = ~/Work
+  root = ~/Work/src

@@ -27,3 +27,10 @@ esac
 # local settings
 [ -f ~/.dotfiles_local/.bashrc ] && source ~/.dotfiles_local/.bashrc
 
+
+cd() {
+  builtin cd "$@" || return
+  [ "$OLDPWD" = "$PWD" ] || case $PWD in
+      (*/public_html) echo "Hello! here is public_html!!!!"
+    esac
+}

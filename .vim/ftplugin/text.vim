@@ -1,2 +1,2 @@
 set syntax=rest
-execute ":Vst fold"
+"execute ":Vst fold"
