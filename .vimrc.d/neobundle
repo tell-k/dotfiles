@@ -10,13 +10,13 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+NeoBundle 'VST'
 " NeoBundle 'Shougo/vimproc.vim'
 " NeoBundle 'Source-Explorer-srcexpl.vim'
 " NeoBundle 'python_fold'
 " NeoBundle 'php-doc'
 " NeoBundle 'YankRing.vim'
 " NeoBundle 'VOoM'
-NeoBundle 'VST'
 " NeoBundle 'rest.vim'
 " NeoBundle 'L9'
 " NeoBundle 'FuzzyFinder'
@@ -48,14 +48,22 @@ NeoBundle 'rust-lang/rust.vim'
 NeoBundle "pangloss/vim-javascript"
 NeoBundle "mxw/vim-jsx"
 NeoBundle "posva/vim-vue"
-NeoBundle 'Shougo/neocomplete.vim'
+" NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/denite.nvim'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
-NeoBundle 'davidhalter/jedi-vim'
+" NeoBundle 'w0rp/ale'
+
+NeoBundle 'prabirshrestha/async.vim'
+NeoBundle 'prabirshrestha/vim-lsp'
+NeoBundle 'prabirshrestha/asyncomplete.vim'
+NeoBundle 'prabirshrestha/asyncomplete-lsp.vim'
+
+" NeoBundle 'davidhalter/jedi-vim'
 " NeoBundle 'ryanoasis/vim-devicons'
+
 
 " original repos on github ------------------------
 " NeoBundle 'mattn/mkdpreview-vim'
@@ -75,6 +83,7 @@ NeoBundle 'davidhalter/jedi-vim'
 " Bundle 'pythoncomplete'
 " Bundle 'Pydiction'
 " Bundle 'sudo.vim'
+
 
 " stay pulgin directory ----------------------------
 " commentout.vim

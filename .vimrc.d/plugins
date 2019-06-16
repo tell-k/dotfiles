@@ -1,5 +1,3 @@
-
-
 " for FuzzyFinder
 "nnoremap <unique> <silent> <space>fb :fufbuffer!<cr>
 "nnoremap <unique> <silent> <space>ff :fuffile!<cr>
@@ -57,6 +55,7 @@ command! -bar ArStop silent AllBrowserReloadStop
 let g:autopep8_disable_show_diff=1
 let g:autopep8_aggressive=2
 let g:autopep8_ignore="E501,E309"
+
 " let g:autopep8_on_save = 1
 " let g:autopep8_diff_type='vertical'
 " autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
@@ -73,7 +72,7 @@ let g:miniBufExplCheckDupeBufs = 0
 " for ropevim
 "let g:ropevim_autoimport_modules = ["os", "shutil"]
 "
-autocmd FileType python setlocal completeopt-=preview
+" autocmd FileType python setlocal completeopt-=preview
 
 function Autoformat()
   :call Autoflake()
@@ -87,9 +86,6 @@ autocmd BufRead,BufNewFile *.ts set filetype=typescript
 
 let g:yankring_clipboard_monitor=0
 
-let g:jedi#force_py_version = 3
-let g:jedi#popup_select_first = 0
-let g:jedi#popup_on_dot = 1
 
 " vim-go
 let g:go_highlight_functions = 1
@@ -116,3 +112,30 @@ let g:airline_powerline_fonts = 1
 "let g:airline#extensions#tabline#enabled = 0
 "let g:airline#extensions#tabline#buffer_idx_mode = 0
 
+" let g:jedi#force_py_version = 3
+" let g:jedi#popup_select_first = 0
+" let g:jedi#popup_on_dot = 1
+" let g:jedi#completions_enabled = 0
+
+" Python language server
+"if executable('pyls')
+"    au User lsp_setup call lsp#register_server({
+"        \ 'name': 'pyls',
+"        \ 'cmd': {server_info->['pyls']},
+"        \ 'whitelist': ['python'],
+"        \ })
+"endif
+
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
+
+let g:asyncomplete_remove_duplicates = 1
+let g:asyncomplete_smart_completion = 1
+let g:asyncomplete_auto_popup = 1
+
+let g:ale_completion_enabled = 1
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_enter = 1
+
+autocmd FileType vue syntax sync fromstart

@@ -23,13 +23,19 @@ autocmd BufWritePre * :%s/\t/ /ge  " 保存時にtabをスペースに変換す�
 " autocmd BufNewFile,BufRead *.py :call Flake8()
 
 " for jedi.vim
-setl completeopt=menuone,longest
-let g:jedi#auto_initialization = 1
-let g:jedi#rename_command = "<leader>R"
-let g:jedi#popup_on_dot = 1
-autocmd FileType python let b:did_ftplugin = 1
+"setl completeopt=menuone,longest
+"let g:jedi#auto_initialization = 1
+"let g:jedi#rename_command = "<leader>R"
+"let g:jedi#popup_on_dot = 1
+"autocmd FileType python let b:did_ftplugin = 1
 
 " python_fold
 setl foldmethod=expr
 setl foldexpr=GetPythonFold(v:lnum)
 setl foldtext=PythonFoldText()
+
+" In ~/.vim/ftplugin/python.vim
+
+let b:ale_linters = ['pyls']
+let b:ale_fixers = ['autopep8']
+let b:ale_warn_about_trailing_whitespace = 0

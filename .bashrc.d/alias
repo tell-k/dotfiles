@@ -1,7 +1,7 @@
 # alias for bash
 alias ls='ls $LS_OPTIONS'
 alias ll='ls $LS_OPTIONS -l'
-alias vim='`sh ~/.switch_vim.sh`'
+# alias vim='`sh ~/.switch_vim.sh`'
 alias vi='vim'
 alias filecount='ls -laR | grep -c "^-"'
 alias globalip='wget -q -O - ipcheck.ieserver.net'
