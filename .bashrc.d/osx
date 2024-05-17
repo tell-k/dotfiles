@@ -1,9 +1,9 @@
 # for virtualenvwrapper
-if [ -f `brew --prefix`/bin/virtualenvwrapper.sh ]; then
-   export WORKON_HOME=$HOME/.virtualenvs
-   export VIRTUALENVWRAPPER_PYTHON=`brew --prefix`/bin/python2
-   source `brew --prefix`/bin/virtualenvwrapper.sh
-fi
+# if [ -f `brew --prefix`/bin/virtualenvwrapper.sh ]; then
+#    export WORKON_HOME=$HOME/.virtualenvs
+#    export VIRTUALENVWRAPPER_PYTHON=`brew --prefix`/bin/python2
+#    source `brew --prefix`/bin/virtualenvwrapper.sh
+# fi
 
 # for bash_compilation
 if [ -f `brew --prefix`/etc/bash_completion ]; then
@@ -28,3 +28,6 @@ export PATH=$PATH:$GOPATH/bin
 
 # for nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# for  mysql
+export PATH=/usr/local/opt/mysql-client/bin:$PATH

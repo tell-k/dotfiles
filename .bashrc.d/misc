@@ -18,7 +18,7 @@ export EDITOR=vim
 export PYTHONSTARTUP=$HOME/.pythonstartup.py
 
 # for virtualenv
-export VIRTUALENV_USE_DISTRIBUTE=1
+# export VIRTUALENV_USE_DISTRIBUTE=1
 
 _invoke() {
   local cur=${COMP_WORDS[COMP_CWORD]}

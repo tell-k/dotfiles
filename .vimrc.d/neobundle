@@ -9,7 +9,6 @@ endif
 call neobundle#begin(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
-
 NeoBundle 'VST'
 " NeoBundle 'Shougo/vimproc.vim'
 " NeoBundle 'Source-Explorer-srcexpl.vim'

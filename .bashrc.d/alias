@@ -2,7 +2,8 @@
 alias ls='ls $LS_OPTIONS'
 alias ll='ls $LS_OPTIONS -l'
 # alias vim='`sh ~/.switch_vim.sh`'
-alias vi='vim'
+alias vi='nvim'
+alias nvi='nvim'
 alias filecount='ls -laR | grep -c "^-"'
 alias globalip='wget -q -O - ipcheck.ieserver.net'
 alias delpyc='find . -name "*.pyc" | xargs rm -fr '
@@ -13,7 +14,7 @@ alias vs="open -a 'Visual Studio Code.app'"
 
 # http://qiita.com/key-amb/items/975576f634355463d6a5
 NEW_WINDOWS=""
-for i in {2..7}; do 
+for i in {2..12}; do
   NEW_WINDOWS=${NEW_WINDOWS}"\; new-window -n WORK"${i}
 done
 alias tmuxnew="tmux new-session -n WORK1 "${NEW_WINDOWS}

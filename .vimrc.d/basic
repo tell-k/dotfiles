@@ -48,3 +48,4 @@ set noautoindent
 set nosmartindent
 set nopaste
 
+autocmd FileType vue syntax sync fromstart
