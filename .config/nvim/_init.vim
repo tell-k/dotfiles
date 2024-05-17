@@ -1,0 +1,22 @@
+" 行番号を表示する
+set number
+" タブはスペース4つ分の幅で表示
+set tabstop=4
+" 空白部分でtabキーやbackspaceを押したときにカーソル移動する幅
+set softtabstop=4
+" 自動インデントの幅
+set shiftwidth=4
+" タブを入力したときスペース×Nに置き換える
+set expandtab
+" 改行時に前の行のインデントを継承する
+set autoindent
+" C系の文法に従って自動インデント、{}とかに反応する
+set smartindent
+" tabと行末の余計な空白を可視化する
+set list
+set listchars=tab:»-,trail:-
+" ビープ音を鳴らさない、可視化もしない
+set visualbell
+set t_vb=
+
+set clipboard+=unnamedplus
