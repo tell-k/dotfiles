@@ -75,5 +75,9 @@ require("lazy").setup({
     "github/copilot.vim",
     lazy=false,
   },
-
+  { 
+    'akinsho/bufferline.nvim', 
+    version="*",
+    dependencies='nvim-tree/nvim-web-devicons' 
+  },
 })
