@@ -16,6 +16,8 @@ sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 
 # update nodejs
 # codespaceは最初からnvmが入ってるらしい
+# https://stackoverflow.com/a/45384470
+source $NVM_DIR/nvm.sh
 nvm install --lts
 
 ./scripts/remove_symbolic_link.sh
