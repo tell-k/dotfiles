@@ -10,17 +10,17 @@ help:
 	@echo "  create_php_dict     to create dictionary file for php."
 	@echo "  create_perl_dict    to create dictionary file for perl."
 
-setup: remove_symlinks install_neobundle create_symlinks
+setup: remove_symlinks create_symlinks
 
 install_neobundle: 
-	sh scripts/install_neobundle.sh
+	./scripts/install_neobundle.sh
 install_vim_plugins: 
-	sh scripts/install_vim_plugins.sh
+	./scripts/install_vim_plugins.sh
 create_symlinks: 
-	sh scripts/create_symbolic_link.sh
+	./scripts/create_symbolic_link.sh
 remove_symlinks: 
-	sh scripts/remove_symbolic_link.sh
+	./scripts/remove_symbolic_link.sh
 create_php_dict: 
-	sh scripts/create_php_dict.sh
+	./scripts/create_php_dict.sh
 create_perl_dict: 
-	sh scripts/create_perl_dict.sh
+	./scripts/create_perl_dict.sh

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 . $(cd $(dirname $0) && pwd)/env.sh
 
@@ -19,6 +19,7 @@ ln -fs $SCRIPT_PATH/switch_vim.sh ~/.switch_vim.sh
 
 mkdir -p ~/.config
 ln -fs $SCRIPT_PATH/../.config/peco ~/.config/
+ln -fs $SCRIPT_PATH/../.config/nvim ~/.config/
 
 [ ! -d ~/.dotfiles_private/ ] && mkdir ~/.dotfiles_private
 touch ~/.dotfiles_private/.bashrc

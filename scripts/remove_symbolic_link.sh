@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 . $(cd $(dirname $0) && pwd)/env.sh
 
@@ -17,3 +17,4 @@ rm -fr ~/.inputrc
 rm -fr ~/.pythonstartup.py
 rm -fr ~/.switch_vim.sh
 rm -fr ~/.config/peco
+rm -fr ~/.config/nvim

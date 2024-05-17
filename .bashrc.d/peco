@@ -5,7 +5,9 @@ pcd() {
         cd "$dir"
     fi
 }
-bind -x '"\C-f":pcd'
+if which peco >& /dev/null && [[ -t 1 ]]; then
+  bind -x '"\C-f":pcd'
+fi
 
 # http://qiita.com/omega999/items/8717c1b9d8bc10596d67
 phistory() {
@@ -30,7 +32,9 @@ phistory() {
         history -d $((HISTCMD-1))
     fi  
 }
-bind -x '"\C-r":phistory'
+if which peco >& /dev/null && [[ -t 1 ]]; then
+  bind -x '"\C-r":phistory'
+fi
 
 # agで検索した結果から選択し、ファイルを開く
 agvi() {
